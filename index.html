@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Saturación de Red</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Calculadora de Saturación de Red</h1>
+
+        <p>
+            Ingrese la cantidad de dispositivos conectados a la red:
+        </p>
+
+        <input
+            type="number"
+            id="dispositivos"
+            placeholder="Ej: 50"
+        >
+
+        <button onclick="calcularRed()">
+            Analizar Red
+        </button>
+
+        <div id="resultado"></div>
+
+        <canvas id="graficoRed"></canvas>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
